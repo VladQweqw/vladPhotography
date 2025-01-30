@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+button, input, textarea {
+    outline: none;
+    border: none;
+    font-family: $ff;
+
+}
+
+body {
+    font-family: $ff-b;
+    color: $black;
+    background-color: $background;
+    padding: .5rem;
+}
+
+#root {
+    max-width: 1400px;
+    position: relative;
+    margin: 80px auto 0 auto;
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    min-height: 100dvh;
+}
+
+a {
+    color: inherit;
+}
+
+.sub-title {
+    font-weight: 500;
+
+}
