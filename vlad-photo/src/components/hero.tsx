@@ -24,10 +24,7 @@ export default function Hero() {
 
    return(
     <section>
-      <div className="image-details">
-         <h2 className="sub-title">Latest image</h2>
-         <div className="location">Location: Paltinu, Prahova</div>
-      </div>
+
       <div className="wrapper">
       {margins.map((item: {
          margin: number,
@@ -41,7 +38,7 @@ export default function Hero() {
          style={{
             width: `${100 / margins.length}%`,
             animation: `${key % 2 == 0 ? "move-horizontally-down" : "move-horizontally-up"} ${item.anim_time}s ease-in-out alternate infinite forwards`,
-            // marginTop: `${item.margin}px`,
+            marginTop: `${item.margin}px`,
          }}
          className="first-section section">
             <div 

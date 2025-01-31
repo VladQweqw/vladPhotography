@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,13 +20,13 @@ img {
 button, input, textarea {
   outline: none;
   border: none;
-  font-family: "Limelight", serif;
+  font-family: "Lexend", serif;
 }
 
 body {
-  font-family: "Kanit", serif;
+  font-family: "Lexend", serif;
   color: #000;
-  background-color: #FFEEDB;
+  background-color: #ececec;
   padding: 0.5rem;
 }
 
@@ -33,13 +34,26 @@ body {
   max-width: 1400px;
   position: relative;
   margin: 80px auto 0 auto;
-  display: grid;
-  grid-template-rows: 80px auto 80px;
-  min-height: 100dvh;
+}
+
+section {
+  min-height: 60dvh;
+}
+
+.h-space {
+  margin: 20vh 0;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .sub-title {
@@ -55,9 +69,9 @@ a {
   align-items: center;
   gap: 3rem;
   left: 0;
-  background-color: #FFEEDB;
+  background-color: #ececec;
   z-index: 999999;
-  font-family: "Limelight", serif;
+  font-family: "Lexend", serif;
 }
 .navbar .left, .navbar .right, .navbar .center {
   display: flex;
@@ -179,6 +193,118 @@ a {
 }
 .wrapper .section:nth-child(4) .background-img {
   background-position-x: 75%;
+}
+
+.photos {
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.photos .see-more {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 50px;
+  top: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.photos .see-more button {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1882352941);
+}
+.photos .see-more .line {
+  width: 40%;
+  height: 2px;
+  background-color: #000;
+}
+.photos .photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 250px;
+  grid-auto-flow: dense;
+  gap: 0.5rem;
+}
+.photos .photos-grid .photo {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1882352941);
+  position: relative;
+}
+.photos .photos-grid .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photos .photos-grid .photo .hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: 0%;
+  color: #FFF;
+}
+.photos .photos-grid .photo .details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  position: absolute;
+  top: calc(100% - 50px);
+  width: 100%;
+  height: 50px;
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: 300ms ease;
+}
+.photos .photos-grid .photo .download-btn {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(95, 190, 95);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.photos .photos-grid .photo:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5647058824);
+}
+.photos .photos-grid .photo:hover .hover {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5019607843), rgba(0, 0, 0, 0));
+}
+.photos .photos-grid .photo:hover .details, .photos .photos-grid .photo:hover .download-btn {
+  opacity: 1;
+  pointer-events: all;
+}
+.photos .photos-grid .photo:hover .details {
+  transform: translateY(0%);
+}
+.photos .photos-grid .photo:hover .download-btn {
+  transform: translateX(0%);
+}
+.photos .photos-grid .span-w {
+  grid-column: span 2;
+}
+.photos .photos-grid .span-h {
+  grid-row: span 2;
+}
+.photos .photos-grid .span-wh {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 @media (max-width: 800px) {
