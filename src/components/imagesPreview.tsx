@@ -1,17 +1,19 @@
 
 import { useState } from "react"
-import image from "../assets/images/img.jpg"
+import image from "../assets/images/aaa_1.jpg"
+import { Link } from "react-router-dom"
 
 export default function ImagesPreview() {
 
-   return(
+   return (
       <section className="photos h-space">
          <h2 className="sub-title">Photos</h2>
 
          <PhotosGrid />
          <div className="see-more">
             <span className="line"></span>
-            <button>See more</button>
+            <Link to={"/gallery"}>
+               <button className="button primary-btn">See more</button></Link>
             <span className="line"></span>
 
          </div>
@@ -20,10 +22,8 @@ export default function ImagesPreview() {
 }
 
 
-function PhotosGrid() {
-
-
-   return(
+export function PhotosGrid() {
+   return (
       <div className="photos-grid">
          <Photo />
          <Photo />
@@ -32,7 +32,6 @@ function PhotosGrid() {
          <Photo />
          <Photo />
          <Photo />
-         <Photo />  
          <Photo />
          <Photo />
          <Photo />
@@ -43,23 +42,30 @@ function PhotosGrid() {
          <Photo />
          <Photo />
          <Photo />
-         
+         <Photo />
       </div>
    )
 }
 
-function Photo() {
-   const [photoClassSize, setPhotoClassSize] = useState("")
-   
-
+export function Photo() {
+   const [photoClassSize] = useState("")
 
    return (
       <div className={`photo ${photoClassSize}`}>
          <img src={image} className="image" alt="" />
          <div className="hover">
             <div className="details">
-               <div className="location">Sinaia, Prahova</div>
-               <button className="see-img">See image</button>
+               <Link to={"https://maps.app.goo.gl/Vo3FidpScVpvQuPR6"} target="_blank">
+                  <div className="location">
+                     <i className="fa-solid fa-location-dot"></i>
+                     Sinaia, Prahova
+                  </div>
+               </Link>
+
+               <Link to={`/photo/123`}>
+                  <button
+                     className="see-img button see-image-btn">See image</button>
+               </Link>
             </div>
             <div className="download-wrapper">
                <a href="" className="download-btn">

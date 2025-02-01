@@ -29,7 +29,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="footer-tradermark">Website made by <a target="_blank" href="https://www.linkedin.com/in/poienariu-vlad/">Poienariu Vlad</a></div>
+            <div className="footer-tradermark">Website made by <a className="accent" target="_blank" href="https://www.linkedin.com/in/poienariu-vlad/">Poienariu Vlad</a></div>
         </footer>
     )
 }

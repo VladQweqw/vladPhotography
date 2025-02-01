@@ -6,7 +6,7 @@ export default function Navbar() {
     <div className="navbar">
         <div className="left">
             <div className="nav-item">
-                <Link to={"/photos"}>Photos</Link>
+                <Link to={"/gallery"}>Gallery</Link>
             </div>
             <div className="nav-item">
                 <Link to={"/panoramas"}>Panoramas</Link>
@@ -24,7 +24,7 @@ export default function Navbar() {
                 <Link to={"/about"}>About me</Link>
             </div>
             <div className="nav-item">
-                <Link to={"/social"}>Find me here</Link>
+                <Link to={"/contact"}>Contact</Link>
             </div>
         </div>
     </div>

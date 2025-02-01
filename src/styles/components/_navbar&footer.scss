@@ -10,7 +10,8 @@
     background-color: $background;
     z-index: 999999;
     font-family: $ff;
-
+    background-image: url("../assets/images/background.png");
+    
     .left, .right, .center {
         display: flex;
         justify-content: center;
