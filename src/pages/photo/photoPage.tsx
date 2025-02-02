@@ -16,7 +16,7 @@ export default function PhotoPage() {
   }
 
   return (
-    <section className=" individual-page">
+    <section className=" individual-page padd section m-top">
       <div className="image-container">
         <img src={image} className="image" alt="" />
       </div>

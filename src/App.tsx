@@ -15,6 +15,7 @@ import NotFound404 from "./pages/404"
 
 import Footer from "./components/footer"
 import Gear from "./pages/gear"
+import Journal from "./pages/journal"
 
 function App() {
 
@@ -27,12 +28,12 @@ function App() {
           <Route path="/gallery" element={<Photos />}></Route>
           <Route path="/panoramas" element={<PanoramasGrid />}></Route>
           <Route path="/gear" element={<Gear />}></Route>
+          <Route path="/journal" element={<Journal />}></Route>
 
           <Route path="/photo/:id" element={<PhotoPage />}></Route>
           <Route path="/panorama/:id" element={<PanoramaPage />}></Route>
 
           <Route path="*" element={<NotFound404 />}></Route>
-
         </Routes>
         <Footer />
       </Router>

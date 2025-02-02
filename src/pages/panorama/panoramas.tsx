@@ -1,22 +1,27 @@
 import { useNavigate } from "react-router"
 import pan from "../../assets/images/pan-preview.png"
+import Title from "../../components/title";
 
 export default function PanoramasGrid() {
 
    return(
-    <section className="panoramas">
-        <Panorama />
-        <Panorama />
-        <Panorama />
-        <Panorama />        
-        <Panorama />
-        <Panorama />
-        <Panorama />
-        <Panorama />        
-        <Panorama />
-        <Panorama />
-        <Panorama />
-        <Panorama />
+    <section className="panoramas section padd m-top h-space">
+        <Title>Panoramas</Title>
+        
+        <div className="panoramas-grid">
+            <Panorama />
+            <Panorama />
+            <Panorama />
+            <Panorama />        
+            <Panorama />
+            <Panorama />
+            <Panorama />
+            <Panorama />        
+            <Panorama />
+            <Panorama />
+            <Panorama />
+            <Panorama />
+        </div>
     </section>
    )
 }

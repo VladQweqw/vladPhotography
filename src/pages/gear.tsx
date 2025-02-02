@@ -24,8 +24,8 @@ export default function Gear() {
          <div className="upgrade-history">
             <Title>Upgrades Timeline</Title>
             <div className="upgrades">
-               {arr.map((item: Object, key: number) => {
-                  return <Upgrade key={key} final={key == arr.length - 1} />
+               {arr.map((item: any, key: number) => {
+                  return <Upgrade key={key} item={item} final={key == arr.length - 1} />
                })}
             </div>
          </div>
@@ -36,7 +36,8 @@ export default function Gear() {
 
 
 function Upgrade(data: {
-   final: boolean
+   final: boolean,
+   item: any
 }) {
 
    return (

@@ -19,20 +19,46 @@ const margins = [
 ]
 
 import image from "../assets/images/img.jpg";
+import image2 from "../assets/images/img2.jpg";
 
 export default function Hero() {
 
    return(
-    <section>
+    <section className="hero">
+      <div className="overlay"></div>
+      
+      <div
+       style={{
+         backgroundImage: `url(${image})`
+      }}
+      className="image-wrapper">
+         <h1>Barajul Paltinu, Prahova, Romania</h1>
+      </div>
+
+      <div
+       style={{
+         backgroundImage: `url(${image2})`
+      }}
+      className="image-wrapper right-text">
+         <h1>Cota 1400, Sinaia, Romania</h1>
+      </div>
+
+
+
+    </section>
+   )
+}
+
+export function ImagesHeader() {
+
+   return(
+    <section className="section padd">
 
       <div className="wrapper">
       {margins.map((item: {
          margin: number,
          anim_time: number
       }, key: number) => {
-
-
-
          return <div
          key={key}
          style={{

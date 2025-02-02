@@ -1,7 +1,7 @@
 
 export default function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer padd section">
             <div className="footer-top">
                 <h3 className="greet">Tranks for visit!</h3>
                 <div className="socials">

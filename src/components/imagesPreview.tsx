@@ -2,12 +2,13 @@
 import { useState } from "react"
 import image from "../assets/images/aaa_1.jpg"
 import { Link } from "react-router-dom"
+import Title from "./title"
 
 export default function ImagesPreview() {
 
    return (
-      <section className="photos h-space">
-         <h2 className="sub-title">Photos</h2>
+      <section className="photos h-space section padd">
+         <Title>Photos</Title>
 
          <PhotosGrid />
          <div className="see-more">
