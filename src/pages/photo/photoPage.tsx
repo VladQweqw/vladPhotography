@@ -41,7 +41,7 @@ export default function PhotoPage() {
           className="button secondary-btn">Share</button>
           <button 
           onClick={() => {
-
+            downloadImage()
           }}
           className="button primary-btn">Download</button>
         </div>

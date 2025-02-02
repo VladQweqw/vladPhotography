@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router"
 import pan from "../../assets/images/pan-preview.png"
 
-export default function Panoramas() {
+export default function PanoramasGrid() {
 
    return(
-    <section className="h-space panoramas">
+    <section className="panoramas">
         <Panorama />
         <Panorama />
         <Panorama />
@@ -27,7 +27,7 @@ function Panorama() {
     return(
         <div
         onClick={() => {
-            navigate("/panoramas/123")
+            navigate("/panorama/123")
         }}
         className="panorama">
             <div className="img-wrapper">

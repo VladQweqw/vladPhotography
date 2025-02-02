@@ -21,11 +21,14 @@ export default function Navbar() {
         </div>
         <div className="right">
             <div className="nav-item">
-                <Link to={"/about"}>About me</Link>
+                <Link to={"/gear"}>Gear</Link>
             </div>
             <div className="nav-item">
-                <Link to={"/contact"}>Contact</Link>
+                <Link to={"/journal"}>Journal</Link>
             </div>
+            {/* <div className="nav-item">
+                <Link to={"/contact"}>Contact</Link>
+            </div> */}
         </div>
     </div>
    )

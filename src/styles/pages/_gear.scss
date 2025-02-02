@@ -1,0 +1,69 @@
+.gear {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+
+    .current-use {
+        width: 400px;
+        text-align: center;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .25rem;
+        
+        .details {
+            p {
+                max-width: 200px;
+            }
+        }
+
+        .title {
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .image-wrapper {
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        overflow: hidden;
+        border-radius: 1px solid;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .upgrade-history {
+        width: 100%;
+
+        .upgrades {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+    
+        }
+
+        .upgrade {
+            text-align: center;
+        }
+
+        .timeline-line {
+            width: 3px;
+            height: 200px;
+            background-color: $black;
+        }        
+
+    }
+}
+
