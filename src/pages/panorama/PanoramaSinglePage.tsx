@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import image from "../../assets/images//sinaia.png"
 import Title from "../../components/title"
 
-import PanoramasGrid from "./panoramas"
+import PanoramasGrid from "./PanoramasGrid"
 
 import { ReactPhotoSphereViewer } from "react-photo-sphere-viewer"
 

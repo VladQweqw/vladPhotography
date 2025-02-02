@@ -1,5 +1,5 @@
-import { ImagesHeader } from "../../components/hero"
-import { PhotosGrid } from "../../components/imagesPreview"
+import ImagesHeader from "./GalleryHeader"
+import PhotosGrid from "./PhotosGrid"
 import Title from "../../components/title"
 
 export default function Photos() {

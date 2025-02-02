@@ -1,6 +1,6 @@
 
 import Hero from "../components/hero"
-import ImagesPreview from "../components/imagesPreview"
+import ImagesPreview from "./photo/PhotosPreview"
 
 export default function Home() {
 

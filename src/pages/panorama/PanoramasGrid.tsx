@@ -1,13 +1,20 @@
 import { useNavigate } from "react-router"
 import pan from "../../assets/images/pan-preview.png"
 
+import { motion } from "framer-motion"
+import { child_photo, parent_photo } from "../../animations"
+
 export default function PanoramasGrid(props: {
     space: boolean
 }) {
 
    return(
     <section className={`panoramas section padd ${props.space ? "h-space" : ""}`}>        
-        <div className="panoramas-grid m-top">
+        <motion.div 
+        variants={parent_photo}
+        initial={"hidden"}
+        whileInView={"visible"}
+        className="panoramas-grid m-top">
             <Panorama />
             <Panorama />
             <Panorama />
@@ -20,7 +27,7 @@ export default function PanoramasGrid(props: {
             <Panorama />
             <Panorama />
             <Panorama />
-        </div>
+        </motion.div>
     </section>
    )
 }
@@ -29,7 +36,9 @@ function Panorama() {
     const navigate = useNavigate();
 
     return(
-        <div
+        <motion.div
+        variants={child_photo}
+
         onClick={() => {
             navigate("/panorama/123")
         }}
@@ -37,6 +46,6 @@ function Panorama() {
             <div className="img-wrapper">
                 <img src={pan} alt="Pan" className="panorama-preview" />
             </div>
-        </div>
+        </motion.div>
     )
 }

@@ -1,9 +1,17 @@
 import { Link } from "react-router"
+import { motion } from "framer-motion"
+
+import { fadeTopBottom } from "../animations"
 
 export default function Navbar() {
 
    return(
-    <div className="navbar">
+    <motion.div 
+    variants={fadeTopBottom}
+    initial={"hidden"}
+    animate={"visible"}
+    
+    className="navbar">
         <div className="left">
             <div className="nav-item">
                 <Link to={"/gallery"}>Gallery</Link>
@@ -24,12 +32,9 @@ export default function Navbar() {
                 <Link to={"/gear"}>Gear</Link>
             </div>
             <div className="nav-item">
-                <Link to={"/journal"}>Journal</Link>
-            </div>
-            {/* <div className="nav-item">
                 <Link to={"/contact"}>Contact</Link>
-            </div> */}
+            </div>
         </div>
-    </div>
+    </motion.div>
    )
 }

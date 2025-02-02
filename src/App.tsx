@@ -5,17 +5,17 @@ import "./styles/main.css"
 import Navbar from "./components/navbar"
 import Home from "./pages/home"
 
-import Photos from "./pages/photo/photos"
-import PhotoPage from "./pages/photo/photoPage"
+import Photos from "./pages/photo/Gallery"
+import PhotoPage from "./pages/photo/PhotoSinglePage"
 
-import PanoramasGrid from "./pages/panorama/panoramas"
-import PanoramaPage from "./pages/panorama/PanoramaPage"
+import PanoramasGrid from "./pages/panorama/PanoramasGrid"
+import PanoramaPage from "./pages/panorama/PanoramaSinglePage"
 
 import NotFound404 from "./pages/404"
 
 import Footer from "./components/footer"
 import Gear from "./pages/gear"
-import Journal from "./pages/journal"
+import Contact from "./pages/contact"
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
           <Route path="/gallery" element={<Photos />}></Route>
           <Route path="/panoramas" element={<PanoramasGrid space={true} />}></Route>
           <Route path="/gear" element={<Gear />}></Route>
-          <Route path="/journal" element={<Journal />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
 
           <Route path="/photo/:id" element={<PhotoPage />}></Route>
           <Route path="/panorama/:id" element={<PanoramaPage />}></Route>

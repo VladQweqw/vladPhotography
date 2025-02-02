@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom"
 import image from "../../assets/images/img.jpg"
-import { PhotosGrid } from "../../components/imagesPreview"
+import PhotosGrid from "./PhotosGrid"
 import Title from "../../components/title"
 
 
