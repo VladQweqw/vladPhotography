@@ -3,7 +3,8 @@
     padding: 2.5rem 0 5rem 0;
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
+
     .image-container {
         width: 100%;
         max-height: 700px;
@@ -15,6 +16,11 @@
             border-radius: 8px;
         }
     
+    }
+
+    .panorama-container {
+        border-radius: 8px;
+        overflow: hidden;
     }
 
     .image-details {
@@ -49,6 +55,7 @@
         gap: 1rem;
     }
 }
+
 
 @media (max-width:500px) {
     .individual-page {

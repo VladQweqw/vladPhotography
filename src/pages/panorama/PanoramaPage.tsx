@@ -18,8 +18,8 @@ export default function PanoramaPage() {
     }
 
    return(
-    <section className="individual-page">
-      <div className="image-container max-h">
+    <section className="individual-page section padd m-top">
+      <div className="image-container panorama-container max-h">
         <ReactPhotoSphereViewer 
         width="100%"
         height="100%"
@@ -52,10 +52,9 @@ export default function PanoramaPage() {
           className="button primary-btn">Download</button>
         </div>
       </div>
-
+        
       <Title>Other panoramas</Title>
-     <PanoramasGrid />
-
+     <PanoramasGrid space={false} />
     </section>
    )
 }

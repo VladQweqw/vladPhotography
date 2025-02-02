@@ -138,3 +138,21 @@ a {
         background-color: $black;
     }
 }
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $accent;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: $accent;
+  } 

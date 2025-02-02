@@ -1,14 +1,13 @@
 import { useNavigate } from "react-router"
 import pan from "../../assets/images/pan-preview.png"
-import Title from "../../components/title";
 
-export default function PanoramasGrid() {
+export default function PanoramasGrid(props: {
+    space: boolean
+}) {
 
    return(
-    <section className="panoramas section padd m-top h-space">
-        <Title>Panoramas</Title>
-        
-        <div className="panoramas-grid">
+    <section className={`panoramas section padd ${props.space ? "h-space" : ""}`}>        
+        <div className="panoramas-grid m-top">
             <Panorama />
             <Panorama />
             <Panorama />

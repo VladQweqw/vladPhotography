@@ -26,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/gallery" element={<Photos />}></Route>
-          <Route path="/panoramas" element={<PanoramasGrid />}></Route>
+          <Route path="/panoramas" element={<PanoramasGrid space={true} />}></Route>
           <Route path="/gear" element={<Gear />}></Route>
           <Route path="/journal" element={<Journal />}></Route>
 

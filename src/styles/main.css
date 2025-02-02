@@ -129,6 +129,24 @@ a {
   background-color: #000;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D17D4F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D17D4F;
+}
+
 .navbar {
   width: 100%;
   position: fixed;
@@ -488,6 +506,10 @@ a {
 }
 
 .panoramas {
+  width: 100%;
+}
+
+.panoramas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 300px;
@@ -500,6 +522,7 @@ a {
   padding: 2.5rem 0 5rem 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .individual-page .image-container {
   width: 100%;
@@ -511,6 +534,10 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+.individual-page .panorama-container {
+  border-radius: 8px;
+  overflow: hidden;
 }
 .individual-page .image-details {
   display: flex;

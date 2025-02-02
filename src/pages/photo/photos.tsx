@@ -6,8 +6,6 @@ export default function Photos() {
 
    return(
     <section className="photos-page h-space section">
-        <Title>Gallery</Title>
-
         <ImagesHeader />
         <br />
         <br />
@@ -16,8 +14,9 @@ export default function Photos() {
         <br />
         <br />
         <br />
-        <PhotosGrid />
 
+        <Title>Gallery</Title>
+        <PhotosGrid />
     </section>
    )
 }
