@@ -1,5 +1,4 @@
 
-import { Link } from "react-router-dom"
 import { useParams } from "react-router-dom";
 
 import PhotosGrid from "./PhotosGrid"
@@ -51,12 +50,10 @@ export default function PhotoPage() {
 
           <div className="image-details">
             <div className="details-left">
-              <Link to={""} target="_blank">
                 <h2 className="location">
                   <i className="fa-solid fa-location-dot"></i>
                   {data?.country}, {data?.country}
                 </h2>
-              </Link>
               <h3 className="device">Shot with {data?.device}</h3>
               <h4 className="date">{msToTime(data?.date)}</h4>
             </div>

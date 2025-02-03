@@ -50,12 +50,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
             gap: 1rem;
     
         }
 
         .upgrade {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .upgrade-details {
+                max-width: 500px;
+            }
         }
 
         .timeline-line {

@@ -44,7 +44,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5rem;
+        padding: clamp(1rem, 2vw, 5rem);
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
@@ -54,7 +54,7 @@
             z-index: 99999;
             color: $secondary-color;
             font-weight: 500;
-
+            font-size: clamp(1rem, 2vw, 1.5rem);
         }
 
     }
@@ -268,8 +268,18 @@
 }
 
 @media (max-width: 800px) {
+    
+    .hero {
+        .image-wrapper {
+            justify-content: center;
+            align-items: flex-end;
+            padding: 2rem .5rem;
+        }
+    }
     .wrapper {
         height: 600px;
+        
+        
 
         .section {
             height: 400px;

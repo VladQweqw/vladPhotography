@@ -3,6 +3,7 @@ import {  parent_photo } from "../../animations"
 import Photo from "./Photo"
 import useFetch from "../../api/useApi"
 import Loader from "../../components/loader";
+import ErrorPage from "../../components/error";
 
 export default function PhotosGrid() {
 
@@ -19,7 +20,7 @@ export default function PhotosGrid() {
 
    if(error) {
       console.log(error);
-      return <h1>An error ocucred</h1>
+      return <ErrorPage />
    }
    
    return (
@@ -28,7 +29,7 @@ export default function PhotosGrid() {
       initial={"hidden"}
       whileInView={"visible"}
 
-      className="photos-grid">
+      className="photos-grid padd">
          {
             data?.length ? data.map((item: PhotoType, index: number) => {
                return <Photo 

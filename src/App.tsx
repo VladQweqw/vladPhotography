@@ -14,7 +14,7 @@ import PanoramaPage from "./pages/panorama/PanoramaSinglePage"
 import NotFound404 from "./pages/404"
 
 import Footer from "./components/footer"
-import Gear from "./pages/gear"
+import Gear from "./pages/gear/Gear"
 import Contact from "./pages/contact"
 
 function App() {

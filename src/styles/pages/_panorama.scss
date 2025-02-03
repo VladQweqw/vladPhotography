@@ -1,20 +1,25 @@
 .panorama {
     border-radius: 100%;
-    overflow: hidden;
     width: 300px;
     height: 300px;
-    pointer-events:painted;
     cursor: pointer;
     transition: 200ms ease;
+    text-align: center;
 
     .img-wrapper {
         width: 100%;
         height: 100%;
-
+        overflow: hidden;
+        border-radius: 100%;
+      
         img {
             width: 100%;
             height: 100%;
         }
+    }
+
+    h2 {
+        font-weight: 500;
     }
 
     &:hover {
@@ -36,4 +41,10 @@
     grid-auto-flow: dense;
     gap: 1rem;
 
+}
+
+@media (max-width: 600px) {
+    .panoramas-grid {
+        grid-template-columns: auto;
+    }
 }
