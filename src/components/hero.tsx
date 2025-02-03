@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 
-import image from "../assets/images/img.jpg";
-import image2 from "../assets/images/img2.jpg";
+import image from "../assets/images/hero-1.webp";
+import image2 from "../assets/images/hero-2.webp";
+
 import { heroImages } from "../animations";
 
 export default function Hero() {
@@ -30,7 +31,7 @@ export default function Hero() {
       }}
       className="image-wrapper right-text">
          <h1
-         >Cota 1400, Sinaia, Romania</h1>
+         >La antene, Prahova, Romania</h1>
       </div>
 
 

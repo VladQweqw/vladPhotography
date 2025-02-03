@@ -1,4 +1,4 @@
-import { child_photo, fadeTopBottom, gearFade, parent_photo } from "../animations"
+import { child_photo, gearFade } from "../animations"
 import Title from "../components/title"
 
 const arr = [

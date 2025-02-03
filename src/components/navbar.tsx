@@ -32,7 +32,7 @@ export default function Navbar() {
                 <Link to={"/gear"}>Gear</Link>
             </div>
             <div className="nav-item">
-                <Link to={"/contact"}>Contact</Link>
+                <Link to={""}>Support me</Link>
             </div>
         </div>
     </motion.div>

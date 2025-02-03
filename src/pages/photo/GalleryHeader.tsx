@@ -17,7 +17,7 @@ const margins = [
     },
 ]
 
-import image from "../../assets/images/img.jpg";
+import image from "../../assets/images/gallery-header.webp";
 
 
 export default function ImagesHeader() {

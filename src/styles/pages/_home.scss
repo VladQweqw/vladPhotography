@@ -54,11 +54,7 @@
             z-index: 99999;
             color: $secondary-color;
             font-weight: 500;
-            cursor: pointer;
 
-            &:hover {
-                color: $white;
-            }
         }
 
     }
@@ -199,12 +195,6 @@
                 display: flex;
                 gap: .25rem;
                 align-items: center;
-                cursor: pointer;
-                transition: 200ms ease;
-
-                &:hover {
-                    color: $secondary-color;
-                }
             }
 
         }
@@ -222,15 +212,18 @@
             justify-content: center;
             align-items: center;
             transition: 300ms ease;
-
             transform: translateX(100%);
             opacity: 0;
             pointer-events: none;
-          
+            z-index: 999;
+
+            &:hover {
+                background-color: $accent-hover;
+            }
+    
             i {
                 font-size: .95rem;
             }
-
         }
 
         &:hover {

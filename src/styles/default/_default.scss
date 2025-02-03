@@ -59,6 +59,13 @@ section {
     margin: 10vh 0;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 
 a {
