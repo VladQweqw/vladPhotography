@@ -177,6 +177,8 @@ a {
 }
 .navbar .center {
   gap: 1rem;
+  align-items: center;
+  flex-direction: row;
 }
 .navbar .nav-item {
   transition: 400ms ease-in-out;
